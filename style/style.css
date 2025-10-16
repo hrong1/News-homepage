@@ -305,10 +305,6 @@ main {
         padding: 0;
         margin: 0;
     }
-
-    .web-header {
-        padding-bottom: var(--spacing-unit);
-    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
