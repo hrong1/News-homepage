@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <header class="web-header" id="web-header">
+    <img class="web-header__logo" src="./assets/images/logo.svg" alt="W. News Homepage">
+    <button class="web-header__sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"></button>
+
+    <nav class="web-header__sidebar" id="sidebar">
+      <ul class="web-header__sidebar-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#categories">Categories</a></li>
+      </ul>
+    </nav>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  </header>
+  <main>
+    <section class="home page-section" id="home">
+      <picture>
+        <source
+          srcset="./assets/images/image-web-3-desktop.jpg"
+          media= "(min-width: 50rem)" />
+        <img class="home__img" src="./assets/images/image-web-3-mobile.jpg" alt="multiple wooden blocks of different colors">
+      </picture>
+      <h1 class="home__title">The Bright Future of Web 3.0?</h1>
+      <p class="home__summary">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.But is it really fulfilling its promise?
+      </p>
+      <a href="#" class="home__read-more" aria-label="Read more about The Bright Future of Web 3.0?">READ MORE</a>
+    </section>
+    <section class="new page-section" id="new">
+      <h2 class="new__title">New</h2>
+
+      <article class="story-card">
+        <a href="#">
+          <h3 class="story-card__title">Hydrogen VS Electric Cars</h3>
+        </a>
+        <p class="story-card__summary">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
+      </article>
+
+      <article class="story-card">
+        <a href="#">
+          <h3 class="story-card__title">The Downsides of AI Artistry</h3>
+        </a>
+        <p class="story-card__summary">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+      </article>
+
+      <article class="story-card">
+        <a href="#">
+          <h3 class="story-card__title">Is VC Funding Drying Up?</h3>
+        </a>
+        <p class="story-card__summary">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </article>
+    </section>
+
+    <section class="popular page-section" id="popular">
+      <h2 class="popular__title">Popular</h2>
+
+      <article class="ranked-card">
+        <img class="ranked-card__img" src="./assets/images/image-retro-pcs.jpg" alt="personal computers in a retro style">
+        <div class="ranked-card__content">
+          <span class="ranked-card__ranking">01</span>
+          <a href="#">
+            <h3 class="ranked-card__title">Reviving Retro PCs</h3>
+          </a>
+          <p class="ranked-card__summary">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </article>
+
+      <article class="ranked-card">
+        <img class="ranked-card__img" src="./assets/images/image-top-laptops.jpg" alt="close-up on the glowing keyboard of a laptop">
+        <div class="ranked-card__content">
+          <span class="ranked-card__ranking">02</span>
+          <a href="#">
+            <h3 class="ranked-card__title">Top 10 Laptops of 2022</h3>
+          </a>
+          <p class="ranked-card__summary">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </article>
+
+      <article class="ranked-card">
+        <img class="ranked-card__img" src="./assets/images/image-gaming-growth.jpg" alt="One hand throws the game controller into the air">
+        <div class="ranked-card__content">
+          <span class="ranked-card__ranking">03</span>
+          <a href="#">
+            <h3 class="ranked-card__title">The Growth of Gaming</h3>
+          </a>
+          <p class="ranked-card__summary">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/hrong1/News-homepage"
+    target="_blank">Haorong Rong</a>.
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
