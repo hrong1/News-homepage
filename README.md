@@ -49,7 +49,7 @@ Learn about how to do the header and navigation Bar in web
 ```html
 <header class="web-header" id="web-header">
     <img class="web-header__logo" src="./assets/images/logo.svg" alt="W. News Homepage">
-    <button class="web-header__sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"></button>
+    <button type="button" class="web-header__sidebar-toggle" id="sidebar-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="sidebar"></button>
 
     <nav class="web-header__sidebar" id="sidebar">
       <ul class="web-header__sidebar-list">

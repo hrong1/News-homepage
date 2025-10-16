@@ -71,7 +71,6 @@ body.sidebar-open {
     background-color: var(--off-white);
     padding: var(--spacing-lg);
     z-index: 100;
-    transition: right var(--animeation-time) ease-in-out;
 }
 
 .web-header__sidebar-list {
@@ -79,9 +78,12 @@ body.sidebar-open {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--very-dark-blue);
     margin-top: var(--spacing-lg);
     gap: var(--spacing-lg);
+}
+
+.web-header__sidebar-list li a:hover {
+    color: var(--dark-grayish-blue);
 }
 
 .web-header__sidebar-list li a:hover {
@@ -99,7 +101,6 @@ body.sidebar-open {
     background-color: transparent;
     border: transparent;
     z-index: 101;
-    transition: background-image var(--animeation-time) ease-in-out;
 }
 
 .sidebar-overlay {
@@ -112,7 +113,6 @@ body.sidebar-open {
     background-color: var(--translucent-black);
     opacity: 0;
     pointer-events: none;
-    transition: opacity var(--animeation-time) ease-in-out;
 }
 
 .web-header.is-open .sidebar-overlay{
@@ -159,7 +159,6 @@ main {
     font-weight: var(--ex-bold-weight);
     font-size: var(--font-size--md);
     width: fit-content;
-    transition: color var(--animeation-time) ease-in-out;
 }
 
 .home__read-more:hover {
@@ -198,7 +197,6 @@ main {
 
 .story-card__title:hover {
     color: var(--soft-orange);
-    transition: color var(--animeation-time) ease-in-out;
 }
 
 .story-card__summary {
@@ -247,7 +245,6 @@ main {
 .ranked-card__title {
     font-size: calc(var(--font-size-base) * 1.5);
     color: var(--very-dark-blue);
-    transition: color var(--animeation-time) ease-in-out;
 }
 
 .ranked-card__title:hover {
@@ -311,6 +308,32 @@ main {
 
     .web-header {
         padding-bottom: var(--spacing-unit);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .web-header__sidebar {
+        transition: right var(--animeation-time) ease-in-out;
+    }
+
+    .ranked-card__title {
+        transition: color var(--animeation-time) ease-in-out;
+    }
+
+    .story-card__title:hover {
+        transition: color var(--animeation-time) ease-in-out;
+    }
+
+    .home__read-more {
+        transition: color var(--animeation-time) ease-in-out;
+    }
+
+    .sidebar-overlay {
+        transition: opacity var(--animeation-time) ease-in-out;
+    }
+
+    .web-header__sidebar-toggle {
+        transition: background-image var(--animeation-time) ease-in-out;
     }
 }
 
