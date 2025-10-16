@@ -82,7 +82,7 @@ body.sidebar-open {
     gap: var(--spacing-lg);
 }
 
-.web-header__sidebar-list li a:hover {
+.web-header__sidebar-list li a {
     color: var(--dark-grayish-blue);
 }
 
