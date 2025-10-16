@@ -165,6 +165,7 @@ main {
     font-weight: var(--ex-bold-weight);
     font-size: var(--font-size--md);
     width: fit-content;
+    height: fit-content;
 }
 
 .home__read-more:hover {
